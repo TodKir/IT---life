@@ -1,0 +1,157 @@
+@import "nullstyle.css";
+
+body {
+   min-width: 1440px;
+   font-family: Roboto;
+}
+
+[class*="__container"] {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0px 12px;
+}
+
+//===========LAPTOP=============//
+
+@media (max-width: 1200px) {
+   [class*="__container"] {
+      max-width: 930px;
+
+   }
+}
+
+//===========TABLET=============//
+
+@media (max-width: 991px) {
+   [class*="__container"] {
+      max-width: 768px;
+
+   }
+}
+
+//===========PHONE=============//
+
+@media (max-width: 600px) {
+   [class*="__container"] {
+      max-width: 100%;
+
+   }
+}
+
+.header {
+   height: 120px;
+   align-content: center;
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0 0 0;
+   }
+
+   &__logo {}
+
+   &__buttons-login {
+      display: flex;
+   }
+}
+
+.buttons-login {
+   padding: 10px 25px 10px 0;
+}
+
+.buttons-use {
+   padding: 10px 15px;
+   background-color: rgba(37, 110, 235, 1);
+   color: #fff;
+   border-radius: 6px;
+}
+
+.header {
+
+   &__buttons-login {}
+}
+
+.text {
+
+   &__1 {
+      color: #000;
+   }
+
+   &__2 {}
+}
+
+//======================================================//
+
+.header {
+
+
+   &__search {
+      padding: 27px 0;
+
+   }
+
+   &__search-block {
+      display: flex;
+      padding: 22.5px 0;
+      background-color: rgba(37, 110, 235, 1);
+      border-radius: 6px;
+   }
+}
+
+.search-block {
+   justify-content: space-between;
+   height: 50px;
+   align-items: center;
+
+   &__form {
+      padding: 14px 22px;
+      background-color: #fff;
+      margin: 0 0 0 5px;
+      height: 42px;
+      width: 100%;
+      border-radius: 6px;
+   }
+
+   &__form input {
+      width: 100%;
+      height: 100%;
+   }
+
+
+
+   &__vertor {
+      display: flex;
+      padding: 13px 20px;
+   }
+
+   &__vertor img {
+      width: 14.65px;
+      height: 14.65px;
+   }
+
+   &__vertor span {
+      margin: 0 0 0 5px;
+      color: #fff;
+   }
+}
+
+//==================================================//
+.header-burger {
+   display: none;
+}
+
+@media (max-width: 991px) {
+   [class*="__container"] {
+      max-width: 768px;
+
+   }
+
+   .header-burger {
+      display: block;
+   }
+
+   .header__buttons-login {
+      display: none;
+   }
+}
